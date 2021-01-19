@@ -18,6 +18,7 @@ public class Test5 {
 	    driver.findElement(By.xpath("//a[@role='button']")).click();
 	    WebElement ele = driver.findElement(By.id("month"));
 	Select s=new Select(ele);
+	System.out.println(s.isMultiple());
 	s.selectByIndex(4);
 	Thread.sleep(2000);
 	s.selectByValue("8");
