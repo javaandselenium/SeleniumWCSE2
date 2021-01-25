@@ -20,6 +20,8 @@ public class Test1 {
 	JavascriptExecutor js=(JavascriptExecutor) driver;
 	js.executeScript("window.scrollBy("+x+","+y+")");
 	
+	
+	
 	Thread.sleep(2000);
 	ele.click();
 	
