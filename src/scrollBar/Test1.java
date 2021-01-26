@@ -11,8 +11,9 @@ public class Test1 {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","./software/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com/");
-	WebElement ele = driver.findElement(By.xpath("//a[text()='Careers']"));	
+	WebElement ele = driver.findElement(By.xpath("//span[text()='Sweatshirts']"));	
 	Point loc = ele.getLocation();
 	int x = loc.getX();
 	int y = loc.getY();
