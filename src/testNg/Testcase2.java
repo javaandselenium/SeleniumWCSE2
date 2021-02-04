@@ -18,6 +18,14 @@ public class Testcase2 extends BaseTest{
 	Reporter.log(driver.getCurrentUrl(),true);
 	}
 	
+
+	@Test
+	public void testcase3() {
+		driver.findElement(By.linkText("Forgotten password?")).click();
+	Reporter.log(driver.getTitle(),true);
+	Reporter.log(driver.getCurrentUrl(),true);
+	}
+	
 	
 	
 	

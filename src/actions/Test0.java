@@ -17,6 +17,7 @@ public class Test0 {
 		Actions a=new Actions(driver);
 		a.moveToElement(ele).perform();
 		
+		
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[text()='iPhones']")).click();
 		Thread.sleep(5000);

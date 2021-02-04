@@ -1,4 +1,4 @@
-package testNg;
+package pom;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,7 +16,7 @@ public class BaseTest {
 		System.setProperty("webdriver.chrome.driver","./software/chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.facebook.com/");
+		driver.get("https://demo.actitime.com/login.do");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	}
 	
